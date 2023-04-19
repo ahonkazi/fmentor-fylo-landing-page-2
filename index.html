@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="home" class="pt-8 pb-[200px] md:pb-[285px] px-8 md:pt-10 lg:pt-[66px]">
+        <nav>
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#home" class="logo">
+                    <img class="h-6 md:h-8 lg:h-auto" src="./images/logo.svg" alt="">
+                </a>
+                <ul class="flex text-VeryDarkBlue items-center gap-4 lg:gap-[58px] justify-end">
+                    <li class="nav__item">
+                        <a href="#features" class="nav_link">Features</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#team" class="nav_link">Team</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#team" class="nav_link">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="hero mt-[86px]">
+            <div class="container mx-auto  flex flex-wrap-reverse md:flex-nowrap">
+                <div class="text-center md:mt-[75px] md:pr-10 md:text-start hero__left-content w-full md:w-1/2">
+                    <h1 class="title text-[24px] md:text-[32px]  lg:text-[40px] font-bold text-VeryDarkBlue">
+                        All your files in one secure location, accessible anywhere.
+
+                    </h1>
+                    <div class="h-3.5"></div>
+                    <p class="sub-title text-lg font-regular text-VeryDarkBlue">
+                        Fylo stores your most important files in one secure location.
+                        Access them wherever you need, share and collaborate with friends,
+                        family, and co-workers.
+                    </p>
+                    <div class="h-5"></div>
+                    <div class="input-box gap-4 flex-wrap md:flex-nowrap flex">
+                        <input
+                            class="bg-transparent  border-b-2 w-full placeholder:text-[#ccc] text-sm px-6 py-2.5 md:py-3 rounded  border border-VeryDarkBlue"
+                            type="text" placeholder="Enter your email...">
+                        <button
+                            class="md:shrink-0 w-full md:w-fit py-2.5 bg-BrightBlue rounded text-sm md:text-base text-white px-16 md:ml-2">Get
+                            Started</button>
+                    </div>
+                </div>
+                <div class="hero__right-photo w-full md:w-1/2">
+                    <img src="./images/illustration-1.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section id="testimonial" class="px-8 md:pt-[38px] pb-[58px] md:pb-[104px] min-h-[600px]">
+        <div class="container mx-auto md:flex-nowrap flex-wrap-reverse justify-center gap-8 flex">
+            <div class="left__content mt-8 text-center md:text-start  w-full md:w-1/2">
+                <h1 class="text-VeryDarkBlue text-[22px] sm:text-[24px] md:text-[36px] font-bold"> Stay productive,
+                    wherever you are</h1>
+                <div class="md:h-8 h-4"></div>
+                <div class="text-sm sm:text-base text-VeryDarkBlue md:pr-28">
+                    <p> Never let location be an issue when accessing your files. Fylo has you
+                        covered for all of your file storage needs.
+                    </p>
+                    <div class="md:h-6 h-3"></div>
+                    <p> Securely share files and folders with friends, family and colleagues for
+                        live collaboration. No email attachments required!
+                    </p>
+                </div>
+                <div class="h-4"></div>
+                <a href="#"
+                    class="flex mx-auto md:mx-0 border-b pb-1 w-fit border-Cyan items-center gap-2 text-ModerateCyan ">
+                    <span> See how Fylo works
+                    </span>
+                    <img src="./images/icon-arrow.svg" alt="">
+                </a>
+                <div class="h-12"></div>
+                <div class="quote sm:w-[400px]  rounded-md bg-white shadow-white px-8 py-6">
+                    <div class="">
+                        <img class="w-4" src="./images/icon-quotes.svg" alt="">
+                    </div>
+                    <div class="h-3"></div>
+                    <p class="text-VeryDarkBlue text-[13px] text-start leading-[22px] tracking-wider md:text-sm">
+                        Fylo has improved our team productivity by an order of magnitude. Since
+                        making the switch our team has become a well-oiled collaboration machine.
+                    <div class="h-4"></div>
+                    <div class="quote-footer  gap-2 flex">
+                        <img class="w-8 h-8 rounded-full" src="./images/avatar-testimonial.jpg" alt="">
+                        <div class="leading-[16px] text-start">
+                            <p class="text-[13px] font-bold tracking-wide">Kyle Burton</p>
+                            <p class="text-VeryDarkBlue text-[10px]">Founder & CEO,Huddle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right__photo  w-full md:w-1/2 md:pl-24">
+                <img src="./images/illustration-2.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="newlatter" class="py-14 md:py-20 px-8">
+        <div class="container mx-auto flex-wrap md:flex-nowrap gap-4  flex md:justify-between">
+            <div class="left__content w-full md:w-1/2 md:pr-32">
+                <h1 class="text-white text-[28px] md:text-[36px] font-bold"> Get early access today
+                </h1>
+                <div class="h-4"></div>
+                <p class="text-white opacity-90">
+                    It only takes a minute to sign up and our free starter tier is extremely generous.
+                    If you have any questions, our support team would be happy to help you.
+
+                </p>
+            </div>
+            <div class="left__content w-full md:w-1/2 md:pl-32">
+                <div class="input-box gap-2 md:gap-4 flex flex-col">
+                    <input
+                        class="bg-white  shadow-white w-full placeholder:text-slate-400  text-sm px-6 py-2.5 md:py-3 rounded  border border-slate-100"
+                        type="text" placeholder="Enter your email...">
+                    <button
+                        class="w-full md:w-fit py-3 bg-BrightBlue rounded-sm text-sm md:text-base text-white px-16">Get
+                        Started for free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-14 px-8 md:py-20">
+        <div class="container mx-auto">
+            <img src="./images/logo-white.svg" class="h-12" alt="">
+        </div>
+        <div class="container mt-4 flex flex-col gap-4 md:flex-row  items-start justify-between mx-auto">
+            <ul class="item flex flex-col gap-2">
+                <li class="flex gap-6 items-center">
+                    <img class="h-fit" src="./images/icon-phone.svg" alt="">
+                    <p class="opacity-90">Phone: +1-543-123-4567</p>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <img class="h-fit" src="./images/icon-email.svg" alt="">
+                    <p class="opacity-90">example@fylo.com</p>
+                </li>
+            </ul>
+            <ul class="item flex flex-col gap-2">
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">About</p>
+                    </a>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Jobs</p>
+                    </a>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Press</p>
+                    </a>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Blog</p>
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="item flex flex-col gap-2">
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Contact Us</p>
+                    </a>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Terms</p>
+                    </a>
+                </li>
+                <li class="flex gap-6 items-center">
+                    <a href="#">
+                        <p class="opacity-90">Privacy</p>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="item flex text-base md:w-[300px] gap-6">
+                <li class="flex w-8 h-8 border border-slate-200 rounded-full justify-center items-center">
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="flex w-8 h-8 border border-slate-200 rounded-full justify-center items-center">
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                </li>
+                <li class="flex w-8 h-8 border border-slate-200 rounded-full justify-center items-center">
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+    </footer>
+
+    <footer class="text-sm bg-slate-200 text-slate-800 py-4 text-center">
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#"><span class="text-BrightBlue">Ahon Khan</span></a>.
+        </p>
+    </footer>
+</body>
+
+</html>
